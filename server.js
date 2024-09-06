@@ -104,8 +104,6 @@ app.get('/api/events', async (req, res) => {
   }
 });
 
-
-// Add a new event
 app.post('/api/events', async (req, res) => {
   const { title, start, end } = req.body;
   console.log('Creating new event:', { title, start, end });
